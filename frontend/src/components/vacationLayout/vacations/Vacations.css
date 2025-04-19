@@ -1,0 +1,46 @@
+.VacationsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-y: scroll;
+    background-color: #1976d2;
+    padding: 10px;
+}
+
+.paginationBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62a8ef;
+}
+
+.span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #62a8ef;
+}
+
+.Checkboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    /* Adds space between each (span, checkbox) pair */
+    flex-wrap: wrap;
+    /* Ensures elements wrap if necessary */
+    background-color: #62a8ef;
+    font-weight: bold;
+}
+
+.Checkboxes>span,
+.Checkboxes>input {
+    margin: 0;
+    /* Removes any default margin */
+}
+
+.Checkboxes span {
+    margin-right: 8px;
+    /* Adds space between the span and the checkbox */
+}

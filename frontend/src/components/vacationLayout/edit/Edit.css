@@ -1,0 +1,119 @@
+.EditVacationContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1976d2;
+}
+
+.EditVacation {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 40px 0px;
+}
+
+.EditVacation img {
+    height: 100px;
+    width: 100px;
+}
+
+.EditVacation .description {
+    height: 150px;
+    /* Limit height so it doesn't grow too big */
+    width: 100%;
+    /* Make sure the description takes up full width */
+    resize: vertical;
+    /* Allow resizing vertically */
+    min-height: 60px;
+    /* Set a min-height to prevent shrinking */
+}
+
+.EditVacation h1 {
+    color: dodgerblue;
+    size: 40px;
+}
+
+.EditVacation form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Ensure padding is accounted for in the width */
+    overflow-y: auto;
+    /* Allow scrolling if necessary */
+}
+
+.EditVacation button {
+    color: white;
+    background-color: dodgerblue;
+    border: 0px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.EditVacation span {
+    text-align: center;
+}
+
+.EditVacation form>label {
+    color: gray;
+}
+
+.cover-image-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.cover-image-preview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cover-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.change-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.file-input {
+    display: none;
+    /* Hide the default file input */
+}

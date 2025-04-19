@@ -1,0 +1,154 @@
+ /* Individual Vacation styling */
+ .Vacation {
+     width: 450px;
+     height: 350px;
+     /* Makes each Vacation take up 1/3 of the container minus the gap */
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     background-color: #fff;
+     font-family: 'Arial', sans-serif;
+     padding: 20px;
+     box-sizing: border-box;
+ }
+
+ /* Image styling */
+ .Vacation img {
+     width: 100%;
+     height: 120px;
+     object-fit: cover;
+     border-radius: 8px;
+     margin-bottom: 15px;
+     margin-top: -20px;
+ }
+
+ /* Destination styling */
+ .Vacation span {
+     font-size: 1.25rem;
+     font-weight: bold;
+     display: inline-block;                        /* allows padding, border, etc. */
+     width: auto;
+     color: black;
+     margin-bottom: 10px;
+     padding: 0px 4px;
+     position: relative;
+     bottom: 50px;
+     left: 20px;
+     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+ }
+
+ /* Date and bootstrap glyph styling */
+ .Vacation .date {
+     font-size: 0.9rem;
+     color: black;
+     margin-bottom: 10px;
+     position: relative;
+     bottom: 50px;
+     padding: 4px;
+     background-color: lightskyblue;
+     width: 100%;
+     border-radius: 8px;
+     border: 1px solid #007BFF;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Description styling */
+ .Vacation .description {
+     color: #666;
+     margin-bottom: 0px;
+     position: relative;
+     bottom: 60px;
+     overflow-y: scroll;
+     height: 100px;
+ }
+
+ .Vacation .likes {
+     position: relative;
+     top: 40px;
+     left: 30px;
+     color: gray;
+     border-radius: 15px;
+     height: 30px;
+ }
+
+ .Vacation .edit {
+     position: relative;
+     top: 40px;
+     left: 30px;
+     background-color: rgb(246, 243, 243);
+     color: gray;
+     border-radius: 15px;
+     height: 30px;
+ }
+
+ .Vacation .delete {
+     position: relative;
+     top: 40px;
+     left: 50px;
+     background-color: rgb(246, 243, 243);
+     color: gray;
+     border-radius: 15px;
+     height: 30px;
+ }
+
+
+ /* Button styling */
+ .Vacation .price {
+     background-color: #007bff;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     width: 100%;
+     position: relative;
+     bottom: 50px;
+ }
+
+ .Vacation button:hover {
+     background-color: #0056b3;
+ }
+
+ .Vacation .liked {
+     position: relative;
+     top: 40px;
+     left: 30px;
+     border-radius: 15px;
+     height: 30px;
+     background-color: pink;
+     color: black;
+ }
+
+ .Vacation .liked .bi-heart-fill {
+     color: red;
+ }
+
+ .Vacation .liked:hover {
+     background-color: red;
+ }
+
+ .Vacation .liked:hover .bi-heart-fill {
+    color: pink;
+}
+
+ .Vacation .likes:hover {
+     background-color: gray;
+     color: black;
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+     .Vacation {
+         width: calc(50% - 20px);
+         /* Make Vacations take up 50% on smaller screens */
+     }
+ }
+
+ @media (max-width: 480px) {
+     .Vacation {
+         width: 100%;
+         /* Make Vacations take up 100% on mobile*/
+     }
+ }

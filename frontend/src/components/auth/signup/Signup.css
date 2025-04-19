@@ -1,0 +1,90 @@
+/*
+.SignupContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.Signup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 300px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+
+}
+
+.Signup h1 {
+    color: dodgerblue;
+    size: 40px;
+}
+
+.Signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup button {
+    color: white;
+    background-color: dodgerblue;
+    border: 0px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+
+.Signup input {
+    height: 20px;
+}
+
+.Signup span {
+    text-align: center;
+}
+
+.Signup form > label {
+    color: gray;
+}
+    */
+
+
+
+
+.img img {
+    width: calc(60px + 10%);
+    height: calc(40px + 10%);
+    position: absolute;
+    left: calc(-60px + 10%);
+    top: 50px;
+}
+
+.img span {
+    width: calc(60px + 10%);
+    height: calc(40px + 10%);
+    position: absolute;
+    left: calc(-60px + 10%);
+    top: 170px;
+    font-weight: bold;
+}
+
+@media (max-width: 686px) {
+    .img img {
+        width: 100px;
+        height: 65px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .img span {
+        width: auto;
+        position: absolute;
+        left: 120px;
+        top: 30px;
+        font-weight: bold;
+    }
+}
