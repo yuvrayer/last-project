@@ -12,7 +12,7 @@ const adminRouter = Router()
 adminRouter.use(enforceAdminAuth)
 
 adminRouter.get('/edit/:vacationId', paramsValidation(updateVacationParams), getSingleVacation)
-adminRouter.patch('/edit/:vacationId', paramsValidation(updateVacationParams), filesValidation(updateVacationFilesValidator), fileUploader, validation(updateVacationValidator), fileUploader, updateVacation)
+adminRouter.patch('/edit/:vacationId', paramsValidation(updateVacationParams), filesValidation(updateVacationFilesValidator), fileUploader, validation(updateVacationValidator), updateVacation)
 adminRouter.post('/new', validation(newVacationValidator), filesValidation(newVacationFilesValidator), fileUploader, createVacation)
 adminRouter.delete('/:id', paramsValidation(newVacationParams), deleteVacation)
 
