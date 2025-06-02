@@ -1,0 +1,120 @@
+.NewVacationContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1976d2;
+}
+
+.NewVacation {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 40px 0px;
+}
+
+.NewVacation img {
+    height: 100px;
+    width: 100px;
+}
+
+.NewVacation .description {
+    height: 150px;
+    width: 100%;
+    resize: vertical;
+    min-height: 60px;
+}
+
+.NewVacation h1 {
+    color: dodgerblue;
+    size: 40px;
+    margin: 10px 50px;
+}
+
+.NewVacation form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.NewVacation button {
+    color: white;
+    background-color: dodgerblue;
+    border: 0px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.NewVacation span {
+    text-align: center;
+}
+
+.NewVacation form>label {
+    color: gray;
+}
+
+.cover-image-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    min-height: 150px;
+    height: 300px;
+    /* Increased height */
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* Ensure padding/border doesn't affect height */
+}
+
+.cover-image-preview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Ensure this div takes up the full height of the label */
+}
+
+.cover-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire space without distortion */
+}
+
+.cover-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Ensure this div takes up the full height of the label */
+    color: #aaa;
+    font-size: 16px;
+}
+
+.change-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.file-input {
+    display: none;
+    /* Hide the default file input */
+}
